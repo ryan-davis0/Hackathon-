@@ -4,11 +4,18 @@ package main.GUI;
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import javax.swing.*;
+import event.ActionEvent;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author ryanj
  */
-public class NewJFrame extends javax.swing.JFrame {
+public class NewJFrame extends JFrame {
 
     /**
      * Creates new form NewJFrame
@@ -26,27 +33,27 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        button5 = new java.awt.Button();
-        button7 = new java.awt.Button();
-        button12 = new java.awt.Button();
-        button14 = new java.awt.Button();
-        button16 = new java.awt.Button();
-        button17 = new java.awt.Button();
-        button18 = new java.awt.Button();
-        button19 = new java.awt.Button();
-        button20 = new java.awt.Button();
-        button21 = new java.awt.Button();
-        button22 = new java.awt.Button();
-        button23 = new java.awt.Button();
-        button24 = new java.awt.Button();
-        button25 = new java.awt.Button();
-        button26 = new java.awt.Button();
-        button27 = new java.awt.Button();
-        button28 = new java.awt.Button();
-        button29 = new java.awt.Button();
-        button30 = new java.awt.Button();
-        button31 = new java.awt.Button();
-        button32 = new java.awt.Button();
+        button5 = new Button();
+        button7 = new Button();
+        button12 = new Button();
+        button14 = new Button();
+        button16 = new Button();
+        button17 = new Button();
+        button18 = new Button();
+        button19 = new Button();
+        button20 = new Button();
+        button21 = new Button();
+        button22 = new Button();
+        button23 = new Button();
+        button24 = new Button();
+        button25 = new Button();
+        button26 = new Button();
+        button27 = new Button();
+        button28 = new Button();
+        button29 = new Button();
+        button30 = new Button();
+        button31 = new Button();
+        button32 = new Button();
 
         button5.setLabel("button1");
 
@@ -55,10 +62,10 @@ public class NewJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
          
         // Set the background color to a wood color
-        getContentPane().setBackground(new java.awt.Color(156, 93, 82)); // A medium wood color approximation
+        getContentPane().setBackground(new Color(156, 93, 82)); // A medium wood color approximation
 
         // Setting buttons color to grey
-        java.awt.Color greyColor = new java.awt.Color(192, 192, 192); // Standard grey color
+        Color greyColor = new Color(192, 192, 192); // Standard grey color
         button12.setBackground(greyColor);
         button14.setBackground(greyColor);
         button16.setBackground(greyColor);
@@ -80,137 +87,61 @@ public class NewJFrame extends javax.swing.JFrame {
         button32.setBackground(greyColor);
 
         button12.setLabel("button1");
-        button12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button12ActionPerformed(evt);
-            }
-        });
+        button12.addActionListener(this::button12ActionPerformed);
 
         button14.setLabel("button1");
-        button14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button14ActionPerformed(evt);
-            }
-        });
+        button14.addActionListener(this::button14ActionPerformed);
 
         button16.setLabel("button1");
-        button16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button16ActionPerformed(evt);
-            }
-        });
+        button16.addActionListener(this::button16ActionPerformed);
 
         button17.setLabel("button1");
-        button17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button17ActionPerformed(evt);
-            }
-        });
+        button17.addActionListener(this::button17ActionPerformed);
 
         button18.setLabel("button1");
-        button18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button18ActionPerformed(evt);
-            }
-        });
+        button18.addActionListener(this::button18ActionPerformed);
 
         button19.setLabel("button1");
-        button19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button19ActionPerformed(evt);
-            }
-        });
+        button19.addActionListener(this::button19ActionPerformed);
 
         button20.setLabel("button1");
-        button20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button20ActionPerformed(evt);
-            }
-        });
+        button20.addActionListener(this::button20ActionPerformed);
 
         button21.setLabel("button1");
-        button21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button21ActionPerformed(evt);
-            }
-        });
+        button21.addActionListener(this::button21ActionPerformed);
 
         button22.setLabel("button1");
-        button22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button22ActionPerformed(evt);
-            }
-        });
+        button22.addActionListener(this::button22ActionPerformed);
 
         button23.setLabel("button1");
-        button23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button23ActionPerformed(evt);
-            }
-        });
+        button23.addActionListener(this::button23ActionPerformed);
 
         button24.setLabel("button1");
-        button24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button24ActionPerformed(evt);
-            }
-        });
+        button24.addActionListener(this::button24ActionPerformed);
 
         button25.setLabel("button1");
-        button25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button25ActionPerformed(evt);
-            }
-        });
+        button25.addActionListener(this::button25ActionPerformed);
 
         button26.setLabel("button1");
-        button26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button26ActionPerformed(evt);
-            }
-        });
+        button26.addActionListener(this::button26ActionPerformed);
 
         button27.setLabel("button1");
-        button27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button27ActionPerformed(evt);
-            }
-        });
+        button27.addActionListener(this::button27ActionPerformed);
 
         button28.setLabel("button1");
-        button28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button28ActionPerformed(evt);
-            }
-        });
+        button28.addActionListener(this::button28ActionPerformed);
 
         button29.setLabel("button1");
-        button29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button29ActionPerformed(evt);
-            }
-        });
+        button29.addActionListener(this::button29ActionPerformed);
 
         button30.setLabel("button1");
-        button30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button30ActionPerformed(evt);
-            }
-        });
+        button30.addActionListener(this::button30ActionPerformed);
 
         button31.setLabel("button1");
-        button31.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button31ActionPerformed(evt);
-            }
-        });
+        button31.addActionListener(this::button31ActionPerformed);
 
         button32.setLabel("button1");
-        button32.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button32ActionPerformed(evt);
-            }
-        });
+        button32.addActionListener(this::button32ActionPerformed);
         button5.setLabel("button5");
         button7.setLabel("button7");
         button12.setLabel("button12");
@@ -325,95 +256,95 @@ public class NewJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void button12ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button12ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button14ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button14ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button16ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button16ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button17ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button17ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button18ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button18ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button19ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button19ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button20ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button20ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button21ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button21ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button22ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button22ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button23ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button23ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button24ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button24ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button25ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button25ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button26ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button26ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button27ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button27ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button28ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button28ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button29ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button29ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button30ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button30ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button31ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button31ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
-    private void button32ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void button32ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
     }                                        
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
@@ -429,34 +360,30 @@ public class NewJFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new NewJFrame().setVisible(true);
-            }
-        });
+        EventQueue.invokeLater(() -> new NewJFrame().setVisible(true));
     }
 
     // Variables declaration - do not modify                     
-    private java.awt.Button button12;
-    private java.awt.Button button14;
-    private java.awt.Button button16;
-    private java.awt.Button button17;
-    private java.awt.Button button18;
-    private java.awt.Button button19;
-    private java.awt.Button button20;
-    private java.awt.Button button21;
-    private java.awt.Button button22;
-    private java.awt.Button button23;
-    private java.awt.Button button24;
-    private java.awt.Button button25;
-    private java.awt.Button button26;
-    private java.awt.Button button27;
-    private java.awt.Button button28;
-    private java.awt.Button button29;
-    private java.awt.Button button30;
-    private java.awt.Button button31;
-    private java.awt.Button button32;
-    private java.awt.Button button5;
-    private java.awt.Button button7;
+    private Button button12;
+    private Button button14;
+    private Button button16;
+    private Button button17;
+    private Button button18;
+    private Button button19;
+    private Button button20;
+    private Button button21;
+    private Button button22;
+    private Button button23;
+    private Button button24;
+    private Button button25;
+    private Button button26;
+    private Button button27;
+    private Button button28;
+    private Button button29;
+    private Button button30;
+    private Button button31;
+    private Button button32;
+    private Button button5;
+    private Button button7;
     // End of variables declaration                   
 }
