@@ -1,24 +1,24 @@
 package main.model;
-import java.util.ArrayList;
+
 import java.util.Collections;
-import java.util.List;
+import java.util.Stack;
 
 public class Deck {
-    private List<Card> cards;
+    private final Stack<Card> cards;
 
     public Deck() {
-        this.cards = new ArrayList<>();
+        this.cards = new Stack<>();
     }
 
     public void addCard(Card card) {
-        cards.add(card);
+        cards.push(card);
     }
 
     public Card drawCard() {
         if (cards.isEmpty()) {
             return null; // or handle empty deck scenario
         }
-        return cards.remove(0);
+        return cards.pop();
     }
 
     public void shuffle() {
