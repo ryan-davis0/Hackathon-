@@ -360,7 +360,7 @@ public class NewJFrame extends JFrame {
 
         /* Create and display the form */
         EventQueue.invokeLater(() -> new NewJFrame().setVisible(true));
-        Game game = new Game();
+        Game.CreateGame();
     }
 
     // Variables declaration - do not modify                     
