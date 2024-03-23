@@ -4,6 +4,8 @@ package main.GUI;
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import main.Game.Game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -358,6 +360,7 @@ public class NewJFrame extends JFrame {
 
         /* Create and display the form */
         EventQueue.invokeLater(() -> new NewJFrame().setVisible(true));
+        Game game = new Game();
     }
 
     // Variables declaration - do not modify                     
