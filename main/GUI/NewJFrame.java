@@ -5,10 +5,15 @@ package main.GUI;
  */
 
 import main.Game.Game;
+import main.model.ButtonMap;
+import main.model.Tuple;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -32,27 +37,27 @@ public class NewJFrame extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        button5 = new Button();
-        button7 = new Button();
-        button12 = new Button();
-        button14 = new Button();
-        button16 = new Button();
-        button17 = new Button();
-        button18 = new Button();
-        button19 = new Button();
-        button20 = new Button();
-        button21 = new Button();
-        button22 = new Button();
-        button23 = new Button();
-        button24 = new Button();
-        button25 = new Button();
-        button26 = new Button();
-        button27 = new Button();
-        button28 = new Button();
-        button29 = new Button();
-        button30 = new Button();
-        button31 = new Button();
-        button32 = new Button();
+        button5 = new ImageButton();
+        button7 = new ImageButton();
+        button12 = new ImageButton();
+        button14 = new ImageButton();
+        button16 = new ImageButton();
+        button17 = new ImageButton();
+        button18 = new ImageButton();
+        button19 = new ImageButton();
+        button20 = new ImageButton();
+        button21 = new ImageButton();
+        button22 = new ImageButton();
+        button23 = new ImageButton();
+        button24 = new ImageButton();
+        button25 = new ImageButton();
+        button26 = new ImageButton();
+        button27 = new ImageButton();
+        button28 = new ImageButton();
+        button29 = new ImageButton();
+        button30 = new ImageButton();
+        button31 = new ImageButton();
+        button32 = new ImageButton();
 
         button5.setLabel("button1");
 
@@ -292,7 +297,7 @@ public class NewJFrame extends JFrame {
     }                                        
 
     private void button23ActionPerformed(ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        Game.human.Draw3();
     }                                        
 
     private void button24ActionPerformed(ActionEvent evt) {                                         
@@ -329,7 +334,11 @@ public class NewJFrame extends JFrame {
 
     private void button32ActionPerformed(ActionEvent evt) {                                         
         // TODO add your handling code here:
-    }                                        
+    }
+
+    public static final ButtonMap buttonMap = new ButtonMap();
+    public enum CardSpace {myHand, myPlayArea, oppPlayArea, oppPlayArea2}
+    private static NewJFrame frame = null;
 
     /**
      * @param args the command line arguments
@@ -359,31 +368,55 @@ public class NewJFrame extends JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        EventQueue.invokeLater(() -> new NewJFrame().setVisible(true));
+        frame = new NewJFrame();
+        EventQueue.invokeLater(() -> frame.setVisible(true));
+        //populate
+        buttonMap.put(CardSpace.myHand, 0, frame.button32);
+        buttonMap.put(CardSpace.myHand, 1, frame.button31);
+        buttonMap.put(CardSpace.myHand, 2, frame.button26);
+        buttonMap.put(CardSpace.myHand, 3, frame.button27);
+        buttonMap.put(CardSpace.myHand, 4, frame.button28);
+        buttonMap.put(CardSpace.myHand, 5, frame.button29);
+
+        buttonMap.put(CardSpace.myPlayArea, 0, frame.button22);
+        buttonMap.put(CardSpace.myPlayArea, 1, frame.button20);
+        buttonMap.put(CardSpace.myPlayArea, 2, frame.button18);
+        buttonMap.put(CardSpace.myPlayArea, 3, frame.button17);
+
+        buttonMap.put(CardSpace.oppPlayArea, 0, frame.button12);
+        buttonMap.put(CardSpace.oppPlayArea, 1, frame.button14);
+        buttonMap.put(CardSpace.oppPlayArea, 2, frame.button19);
+        buttonMap.put(CardSpace.oppPlayArea, 3, frame.button30);
+
+        buttonMap.put(CardSpace.oppPlayArea2, 0, frame.button21);
+        buttonMap.put(CardSpace.oppPlayArea2, 1, frame.button25);
+        buttonMap.put(CardSpace.oppPlayArea2, 2, frame.button16);
+        buttonMap.put(CardSpace.oppPlayArea2, 3, frame.button24);
         Game.CreateGame();
+        //set a turn loop here
     }
 
     // Variables declaration - do not modify                     
-    private Button button12;
-    private Button button14;
-    private Button button16;
-    private Button button17;
-    private Button button18;
-    private Button button19;
-    private Button button20;
-    private Button button21;
-    private Button button22;
-    private Button button23;
-    private Button button24;
-    private Button button25;
-    private Button button26;
-    private Button button27;
-    private Button button28;
-    private Button button29;
-    private Button button30;
-    private Button button31;
-    private Button button32;
-    private Button button5;
-    private Button button7;
-    // End of variables declaration                   
+    public ImageButton button12;
+    public ImageButton button14;
+    public ImageButton button16;
+    public ImageButton button17;
+    public ImageButton button18;
+    public ImageButton button19;
+    public ImageButton button20;
+    public ImageButton button21;
+    public ImageButton button22;
+    public ImageButton button23;
+    public ImageButton button24;
+    public ImageButton button25;
+    public ImageButton button26;
+    public ImageButton button27;
+    public ImageButton button28;
+    public ImageButton button29;
+    public ImageButton button30;
+    public ImageButton button31;
+    public ImageButton button32;
+    public ImageButton button5;
+    public ImageButton button7;
+    // End of variables declaration
 }
