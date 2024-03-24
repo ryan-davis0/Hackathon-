@@ -22,6 +22,6 @@ public class ButtonMap {
     }
 
     private int Hash(NewJFrame.CardSpace space, int index) {
-        return index << 8 + space.ordinal();
+        return (index << 8) + space.ordinal();
     }
 }
