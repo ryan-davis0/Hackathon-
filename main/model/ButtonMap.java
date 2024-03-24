@@ -3,10 +3,8 @@ package main.model;
 import main.GUI.ImageButton;
 import main.GUI.NewJFrame;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class ButtonMap {
     private Map<Integer, ImageButton> map;

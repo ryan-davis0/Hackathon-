@@ -3,11 +3,6 @@ package main.Game;
 import main.GUI.NewJFrame;
 import main.model.Card;
 import main.model.Deck;
-import main.model.Tuple;
-
-import java.awt.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Player {
     private final Deck deck;

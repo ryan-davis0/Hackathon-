@@ -6,14 +6,10 @@ package main.GUI;
 
 import main.Game.Game;
 import main.model.ButtonMap;
-import main.model.Tuple;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  *
@@ -296,8 +292,10 @@ public class NewJFrame extends JFrame {
         // TODO add your handling code here:
     }                                        
 
-    private void button23ActionPerformed(ActionEvent evt) {                                         
-        Game.human.Draw3();
+    private void button23ActionPerformed(ActionEvent evt) {
+        if (Game.stage == Game.Stage.draw) {
+            Game.human.Draw3();
+        }
     }                                        
 
     private void button24ActionPerformed(ActionEvent evt) {                                         
