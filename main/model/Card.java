@@ -2,11 +2,13 @@ package main.model;
 
 public class Card {
     private final String name;
+    public final String imgPath;
     private int attackPoints;
     private int health;
 
-    public Card(String name, int attackPoints,int health) {
+    public Card(String name, String path, int attackPoints,int health) {
         this.name = name;
+        this.imgPath = path;
         this.attackPoints = attackPoints;
         this.health = health;
     }
